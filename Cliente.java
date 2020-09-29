@@ -23,10 +23,10 @@ public class Cliente {
 	
 		long tempInicial = System.nanoTime();
 		clientSocket.send(enviarPacote);
-		byte[] receberDados = new byte[1024];
-		DatagramPacket receberPacote = new DatagramPacket(receberDados, receberDados.length);
-		clientSocket.receive(receberPacote);
-		System.out.println("RTT: " + (System.nanoTime() - tempInicial)/1000);
+//		byte[] receberDados = new byte[1024];
+//		DatagramPacket receberPacote = new DatagramPacket(receberDados, receberDados.length);
+//		clientSocket.receive(receberPacote);
+//		System.out.println("RTT: " + (System.nanoTime() - tempInicial)/1000);
 		clientSocket.close();
 		
 		
